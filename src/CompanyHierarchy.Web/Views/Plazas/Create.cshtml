@@ -1,0 +1,43 @@
+@model CompanyHierarchy.Web.ViewModels.PlazaFormViewModel
+@{
+    ViewData["Title"] = "Nueva plaza";
+}
+
+<div class="form-shell">
+    <div class="form-card card">
+        <div class="card-body">
+            <h1 class="h4 mb-3">Nueva plaza</h1>
+
+            @if (!string.IsNullOrWhiteSpace(Model.Message))
+            {
+                <div class="alert alert-danger">@Model.Message</div>
+            }
+
+            <form asp-action="Create" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="Puesto" class="form-label"></label>
+                    <input asp-for="Puesto" class="form-control" />
+                    <span asp-validation-for="Puesto" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="NombreEmpleado" class="form-label"></label>
+                    <input asp-for="NombreEmpleado" class="form-control" />
+                    <span asp-validation-for="NombreEmpleado" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="CodigoJefe" class="form-label"></label>
+                    <select asp-for="CodigoJefe" asp-items="Model.Jefes" class="form-select"></select>
+                    <span asp-validation-for="CodigoJefe" class="text-danger"></span>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,27 @@
+@model IReadOnlyList<CompanyHierarchy.Web.ViewModels.PlazaTreeNodeViewModel>
+
+<ul class="tree-root">
+@foreach (var node in Model)
+{
+    <li class="tree-item">
+        <div class="tree-node">
+            <div>
+                <div class="tree-title">@node.CodigoPuesto - @node.Puesto - @node.NombreEmpleado</div>
+                @if (node.CodigoJefe is not null)
+                {
+                    <div class="tree-meta">Jefe: @node.CodigoJefe</div>
+                }
+            </div>
+            <div class="tree-actions">
+                <a asp-controller="Plazas" asp-action="Edit" asp-route-id="@node.CodigoPuesto" class="btn btn-sm btn-outline-primary">Editar</a>
+                <a asp-controller="Plazas" asp-action="Delete" asp-route-id="@node.CodigoPuesto" class="btn btn-sm btn-outline-danger">Eliminar</a>
+            </div>
+        </div>
+
+        @if (node.Children.Count > 0)
+        {
+            <partial name="_PlazaNode" model="node.Children" />
+        }
+    </li>
+}
+</ul>

@@ -18,16 +18,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Plazas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhemFzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Plazas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhemFzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Plazas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhemFzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Plazas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhemFzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Shared/_PlazaNode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19QbGF6YU5vZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/victorfarfan/code/promerica-test/src/CompanyHierarchy.Web/Views/Shared/_ValidationScriptsPartial.cshtml]

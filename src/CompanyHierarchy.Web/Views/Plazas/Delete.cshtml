@@ -1,0 +1,36 @@
+@model CompanyHierarchy.Web.ViewModels.PlazaDeleteViewModel
+@{
+    ViewData["Title"] = "Eliminar plaza";
+}
+
+<div class="form-shell">
+    <div class="form-card card danger-card">
+        <div class="card-body">
+            <h1 class="h4 mb-3">Eliminar plaza</h1>
+
+            <div class="alert alert-warning">
+                Esta acción no se puede deshacer.
+            </div>
+
+            <dl class="row mb-4">
+                <dt class="col-sm-4">Código</dt>
+                <dd class="col-sm-8">@Model.CodigoPuesto</dd>
+
+                <dt class="col-sm-4">Puesto</dt>
+                <dd class="col-sm-8">@Model.Puesto</dd>
+
+                <dt class="col-sm-4">Empleado</dt>
+                <dd class="col-sm-8">@Model.NombreEmpleado</dd>
+
+                <dt class="col-sm-4">Jefe</dt>
+                <dd class="col-sm-8">@Model.JefeDescripcion</dd>
+            </dl>
+
+            <form asp-action="DeleteConfirmed" method="post" class="d-flex gap-2">
+                <input type="hidden" name="codigoPuesto" value="@Model.CodigoPuesto" />
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>

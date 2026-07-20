@@ -1,5 +1,7 @@
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -8,15 +10,123 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  background:
+    radial-gradient(circle at top left, rgba(23, 37, 84, 0.08), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  color: #0f172a;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #1d4ed8;
+}
+
+.site-nav {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+}
+
+.site-nav .nav-link,
+.site-nav .navbar-brand {
+  color: #f8fafc !important;
+}
+
+.app-shell {
+  padding-bottom: 2rem;
+}
+
+.page-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.tree-card,
+.form-card {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 1.1rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.tree-root {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.tree-item {
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+
+.tree-node {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.tree-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tree-meta {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.tree-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tree-root .tree-root {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px dashed #cbd5e1;
+  margin-top: 0.75rem;
+}
+
+.form-shell {
+  display: grid;
+  place-items: start center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 860px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.danger-card {
+  border-color: rgba(220, 38, 38, 0.25);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
 }
