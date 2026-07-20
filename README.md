@@ -21,9 +21,5 @@ Aplicación en ASP.NET Core .NET 8 para mostrar y administrar una jerarquía de 
 
 1. Inicia la API desde `src/CompanyHierarchy.Api`.
 2. Inicia la aplicación MVC desde `src/CompanyHierarchy.Web`.
-3. Abre la web y usa el árbol para crear, editar y eliminar plazas.
+3. Abre la web (usualmente puerto 5051) y usa el árbol para crear, editar y eliminar plazas.
 
-## Notas
-
-- No se agregaron pruebas a propósito, según el alcance acordado.
-- El borrado bloquea registros que tienen subordinados.

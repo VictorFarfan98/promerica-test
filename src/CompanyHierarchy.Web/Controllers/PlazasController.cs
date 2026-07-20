@@ -155,6 +155,7 @@ public sealed class PlazasController : Controller
         {
             _logger.LogWarning(ex, "Error eliminando plaza.");
             TempData["Message"] = ex.Message;
+            TempData["MessageType"] = "danger";
             return RedirectToAction(nameof(Index));
         }
     }

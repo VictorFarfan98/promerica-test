@@ -16,7 +16,8 @@
 
 @if (!string.IsNullOrWhiteSpace(Model.Message))
 {
-    <div class="alert alert-info">@Model.Message</div>
+    var messageType = TempData["MessageType"] as string ?? "info";
+    <div class="alert alert-@messageType">@Model.Message</div>
 }
 
 <div class="card tree-card">
